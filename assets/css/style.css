@@ -1,0 +1,30 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
+
+/*basic grid*/
+*{
+    border:0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    grid-template-rows:100px auto 100px;
+    grid-template-columns:repeat(12, 1fr);
+}
+.h{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    border:1px solid green;
+}
+.c{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    border:1px solid red;
+}
+.f{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    border:1px solid blue;
+}

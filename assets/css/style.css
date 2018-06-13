@@ -61,6 +61,7 @@ a:hover{
     margin-left: 17%;
 }
 .card {
+    cursor: pointer;
     background: #F5F2DC;
     padding:40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -139,4 +140,7 @@ td{
     font-weight: bold;
     margin:20px;
     cursor: pointer;
+}
+.refresh:hover{
+    color:#00585E;
 }

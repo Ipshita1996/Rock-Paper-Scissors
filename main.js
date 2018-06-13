@@ -11,10 +11,8 @@ function randomselect(arr){
 
 function rock(){
     selection='rock'
-    console.log(selection)
     game()
     count+=1
-    console.log(count)
     if(count===5){
         compare(pscore,cscore)
         modal.style.display = "block";
@@ -23,10 +21,8 @@ function rock(){
 
 function paper(){
     selection='paper'
-    console.log(selection)
     game()
     count+=1
-    console.log(count)
     if(count===5){
         compare(pscore,cscore)
         modal.style.display = "block";
@@ -34,10 +30,8 @@ function paper(){
 }
 function scissors(){
     selection='scissors'
-    console.log(selection)
     game()
     count+=1
-    console.log(count)
     if(count===5){
         compare(pscore,cscore)
         modal.style.display = "block";
@@ -45,8 +39,6 @@ function scissors(){
 }
 
 function computerPlay(playerSelection){
-    //"You Lose! Paper beats Rock"
-    //let sel=playerSelection.toLowerCase()
     sel=selection
     let arr=['rock','paper','scissors']
     let computerSelection=randomselect(arr)
@@ -84,15 +76,12 @@ function computerPlay(playerSelection){
 }
 function compare(pscore,cscore){
     if(pscore>cscore){
-        console.log('You win!')
         document.getElementById('mytext').innerHTML='You win!'
     }
     else if(cscore>pscore){
-        console.log('You lose!')
         document.getElementById('mytext').innerHTML='You lose!'
     }
     else{
-        console.log('It\'s a tie!')
         document.getElementById('mytext').innerHTML='It\'s a tie!'
     }
 }
@@ -105,7 +94,6 @@ function game(){
     console.log(selection)
     results=computerPlay(selection)
     if(results[1]==='-1'){
-        console.log(results[0])
         cscore+=1
         pscore+=1
         if(count==0){
@@ -136,7 +124,6 @@ function game(){
         
     }
     else if(results[1]==='0'){
-        console.log(results[0])
         cscore+=1
         if(count==0){
             //round1
@@ -165,7 +152,6 @@ function game(){
         }
     }
     else if(results[1]==='1'){
-        console.log(results[0])
         pscore+=1
         if(count==0){
             //round1

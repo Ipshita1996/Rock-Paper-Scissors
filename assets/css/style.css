@@ -27,8 +27,11 @@ body{
     background: #00585E;
 }
 .f{
-    grid-column-start: 1;
-    grid-column-end: -1;
+    margin-top:20px;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    font-size: 0.85em;
+    color: #F5F2DC;
 }
 /*header*/
 #title{
@@ -88,8 +91,16 @@ table{
     margin-left: 20%;
     margin-top:25px;
     color:#F5F2DC;
+    margin-bottom: 20px;
 }
 td{
     padding:10px;
 }
 /*footer*/
+.f p{
+    display: inline-block;
+}
+#link{
+    float:right;
+
+}

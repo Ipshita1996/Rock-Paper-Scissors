@@ -13,12 +13,13 @@ body{
 }
 .grid{
     display: grid;
-    grid-template-rows:200px auto 50px;
+    grid-template-rows:5fr auto 50px;
     grid-template-columns:repeat(12, 1fr);
 }
 .h{
     grid-column-start: 1;
     grid-column-end: -1;
+    margin-bottom:10px;
 }
 .c{
     grid-column-start: 1;
@@ -54,13 +55,14 @@ a:hover{
 
 /*content*/
 .cards{
-    margin-left: 20%;
+    margin-left: 17%;
 }
 .card {
     background: #F5F2DC;
     padding:40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    transition: transform .2s;
     display: inline-block;
     margin:40px;
     border-radius: 5px;
@@ -68,8 +70,26 @@ a:hover{
 .card img {
     border-radius: 5px 5px 0 0;
 }
+.card:hover{
+    transform: scale(1.15);
+}
 
-table, th, tr, td{
-    border:1px solid black;
+.container h4{
+    color:#00585E;
+    text-align: center;
+    margin-top:20px; 
+}
+
+.subtitle{
+    color:#FF9811;
+    text-align: center;
+}
+table{
+    margin-left: 20%;
+    margin-top:25px;
+    color:#F5F2DC;
+}
+td{
+    padding:10px;
 }
 /*footer*/

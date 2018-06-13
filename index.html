@@ -20,19 +20,19 @@
         <div class="c">
             <h3 class="subtitle" style="margin-top:20px;">PICK ONE</h3>
             <div class="cards">
-                <div class="card">
+                <div class="card" onclick="rock()" id="rock">
                     <img src="assets/images/003-rock.png" alt="rock">
                     <div class="container">
                         <h4><b>ROCK</b></h4> 
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="paper()" id="paper">
                     <img src="assets/images/002-paper-plane.png" alt="paper">
                     <div class="container">
                         <h4><b>PAPER</b></h4> 
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="scissors()" id="scissors">
                     <img src="assets/images/001-scissors.png" alt="Scissors">
                     <div class="container">
                         <h4><b>SCISSORS</b></h4> 
@@ -67,6 +67,13 @@
                     </tr>
                 </table>
             </div>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <p id="mytext">Some text in the Modal..</p>
+                  <button class="refresh" onclick="refresh()">Play Again</button>
+                </div>
+              </div>
         </div>
         <!--the credits go here-->
         <div class="f">
@@ -74,6 +81,6 @@
             <p id="link">Made for the project that can be found <a href="https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors" target="_blank">here</a></p>
         </div>
     </div>
-    <!--<script src="main.js"></script>-->
+    <script src="main.js"></script>
 </body>
 </html>

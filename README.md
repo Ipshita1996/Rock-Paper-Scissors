@@ -61,7 +61,7 @@ function computerPlay(playerSelection){
 }
 ```
 ## How to Play?
-Find the game [here](https://ipshita1996.github.io/Rock-Paper-Scissors/)
+Find the game [here](https://ipshitachatterjee.github.io/Rock-Paper-Scissors/)
 
 ## Credits
 **©Ipshita Chatterjee | 2018**
